@@ -1,9 +1,9 @@
 import RestaurantCard from "./RestaurantCard";
 
-import { resList } from "../utils/mockData";
 import { useState, useEffect } from "react";
-import { async } from "regenerator-runtime";
-import { RESTAURANT_DATA_URL, MORE_RESTAURANTS_URL } from "../utils/constants";
+
+import { RESTAURANT_DATA_URL } from "../utils/constants";
+import { Link } from "react-router-dom";
 
 const RestaurantContainer = () => {
   const [listOfRes, setListOfRes] = useState([]);
@@ -83,7 +83,16 @@ const RestaurantContainer = () => {
           <h1>Loading...</h1>
         ) : (
           filteredListOfRes.map((res) => {
-            return <RestaurantCard resData={res.info} key={res.info.id} />;
+            console.log(res.info);
+            return (
+              <Link
+                to={"/restaurants/" + res.info.id}
+                style={{ "text-decoration": "none" }}
+                key={res.info.id}
+              >
+                <RestaurantCard resData={res.info} />
+              </Link>
+            );
           })
         )}
       </section>

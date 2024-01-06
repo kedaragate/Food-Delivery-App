@@ -7,6 +7,8 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
 
+import RestaurantMenuPage from "./components/RestaurantMenuPage";
+
 const SearchBar = () => (
   <section className="search-bar-container">Search bar</section>
 );
@@ -35,6 +37,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/restaurants/:resId",
+        element: <RestaurantMenuPage />,
       },
     ],
   },
