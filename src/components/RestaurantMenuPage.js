@@ -19,7 +19,7 @@ export default RestaurantMenu = () => {
   };
 
   if (resData.length === 0) {
-    return;
+    return <h1>Loading...</h1>;
   }
 
   return (
