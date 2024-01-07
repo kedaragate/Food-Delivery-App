@@ -2,7 +2,7 @@ import starIcon from "../../assets/images/star.svg";
 import RestaurantMenuItems from "./RestaurantMenuItems";
 import RestaurantOffers from "./RestaurantOffers";
 
-export default RestaurantInfo = ({ resData }) => {
+const RestaurantInfo = ({ resData }) => {
   const {
     name,
     cuisines,
@@ -57,3 +57,5 @@ export default RestaurantInfo = ({ resData }) => {
     </div>
   );
 };
+
+export default RestaurantInfo;

@@ -1,6 +1,6 @@
 import RestaurantOfferCard from "./RestaurantOfferCard";
 
-export default RestaurantOffers = ({ resOffers }) => {
+const RestaurantOffers = ({ resOffers }) => {
   return (
     <div className="restaurant-page-offer-container">
       {resOffers.map((offer) => {
@@ -14,3 +14,4 @@ export default RestaurantOffers = ({ resOffers }) => {
     </div>
   );
 };
+export default RestaurantOffers;

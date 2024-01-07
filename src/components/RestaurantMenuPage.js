@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import RestaurantInfo from "./RestaurantInfo";
 
-export default RestaurantMenu = () => {
+const RestaurantMenu = () => {
   const [resData, setResData] = useState([]);
   const { resId } = useParams();
 
@@ -28,3 +28,5 @@ export default RestaurantMenu = () => {
     </>
   );
 };
+
+export default RestaurantMenu;

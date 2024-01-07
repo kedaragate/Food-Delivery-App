@@ -1,6 +1,6 @@
 import { IMG_URL } from "../utils/constants";
 
-export default RestaurantMenuItems = ({ menuItems }) => {
+const RestaurantMenuItems = ({ menuItems }) => {
   const { itemCards } = menuItems[2]?.card?.card;
   const { categories } = menuItems[2]?.card?.card;
   //console.log(categories);
@@ -72,3 +72,4 @@ export default RestaurantMenuItems = ({ menuItems }) => {
     </div>
   );
 };
+export default RestaurantMenuItems;

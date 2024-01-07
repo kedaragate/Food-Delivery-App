@@ -1,4 +1,4 @@
-export default RestaurantOfferCard = ({ offer }) => {
+const RestaurantOfferCard = ({ offer }) => {
   const { header, logoBottom, couponCode } = offer;
 
   return (
@@ -8,3 +8,5 @@ export default RestaurantOfferCard = ({ offer }) => {
     </div>
   );
 };
+
+export default RestaurantOfferCard;
