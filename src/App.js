@@ -9,10 +9,6 @@ import Error from "./components/Error";
 
 import RestaurantMenuPage from "./components/RestaurantMenuPage";
 
-const SearchBar = () => (
-  <section className="search-bar-container">Search bar</section>
-);
-
 const AppLayout = () => (
   <div className="app">
     <HeaderComponent />
