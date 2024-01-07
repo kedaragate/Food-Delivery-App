@@ -266,11 +266,19 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 0.5px solid var(--dull-white);
+  height: 15rem;
+
+  width: 100%;
+  cursor: pointer;
+}
+
+.menu-item-info {
+  width: 60%;
 }
 
 .menu-item-image-container {
-  width: 6rem;
-  height: 5rem;
+  width: 15rem;
+  height: 80%;
 }
 
 .menu-item-image {

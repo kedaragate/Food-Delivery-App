@@ -1,6 +1,4 @@
 export default RestaurantOfferCard = ({ offer }) => {
-  console.log(offer);
-
   const { header, logoBottom, couponCode } = offer;
 
   return (

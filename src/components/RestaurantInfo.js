@@ -49,10 +49,10 @@ export default RestaurantInfo = ({ resData }) => {
         </div>
       </div>
       <RestaurantOffers
-        resOffers={resData[1].card?.card?.gridElements?.infoWithStyle?.offers}
+        resOffers={resData[1]?.card?.card?.gridElements?.infoWithStyle?.offers}
       />
       <RestaurantMenuItems
-        menuItems={resData[2].groupedCard.cardGroupMap.REGULAR.cards}
+        menuItems={resData[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards}
       />
     </div>
   );
