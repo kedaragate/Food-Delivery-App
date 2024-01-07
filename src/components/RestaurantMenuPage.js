@@ -12,10 +12,14 @@ const RestaurantMenu = () => {
   }, []);
 
   const fetchRestaurantMenu = async () => {
-    const response = await fetch(RESTAURANTS_MENU_URL + resId);
-    const result = await response.json();
+    try {
+      const response = await fetch(RESTAURANTS_MENU_URL + resId);
+      const result = await response.json();
 
-    setResData(result?.data?.cards);
+      setResData(result?.data?.cards);
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   if (resData.length === 0) {

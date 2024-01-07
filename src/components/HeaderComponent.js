@@ -8,17 +8,29 @@ const HeaderComponent = () => (
     <div className="menu-container">
       <ul>
         <li>
-          <Link className="nav-menu-item" to="/">
+          <Link
+            className="nav-menu-item"
+            to="/"
+            style={{ textDecoration: "none" }}
+          >
             Home
           </Link>
         </li>
         <li>
-          <Link className="nav-menu-item" to="/about">
+          <Link
+            className="nav-menu-item"
+            to="/about"
+            style={{ textDecoration: "none" }}
+          >
             About Us
           </Link>
         </li>
         <li>
-          <Link className="nav-menu-item" to="/contact">
+          <Link
+            className="nav-menu-item"
+            to="/contact"
+            style={{ textDecoration: "none" }}
+          >
             Contact Us
           </Link>
         </li>

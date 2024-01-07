@@ -5,7 +5,8 @@
     "react-router-dom": "^6.21.1"
   },
   "devDependencies": {
-    "parcel": "^2.11.0"
+    "parcel": "^2.11.0",
+    "process": "^0.11.10"
   },
   "name": "food-delivery-app",
   "version": "1.0.0",
