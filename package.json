@@ -10,7 +10,6 @@
   "name": "food-delivery-app",
   "version": "1.0.0",
   "description": "food-delivery-app",
-  "main": "App.js",
   "scripts": {
     "start": "parcel index.html",
     "test": "jest",
