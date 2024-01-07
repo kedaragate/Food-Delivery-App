@@ -83,11 +83,10 @@ const RestaurantContainer = () => {
           <h1>Loading...</h1>
         ) : (
           filteredListOfRes.map((res) => {
-            console.log(res.info);
             return (
               <Link
                 to={"/restaurants/" + res.info.id}
-                style={{ "text-decoration": "none" }}
+                style={{ textDecoration: "none" }}
                 key={res.info.id}
               >
                 <RestaurantCard resData={res.info} />
