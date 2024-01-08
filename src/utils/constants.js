@@ -4,5 +4,5 @@ export const IMG_URL =
 const latLang = "lat=18.524545&lng=73.6981481";
  const actualResDataUrl=`https://www.swiggy.com/dapi/restaurants/list/v5?${latLang}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`;
 export const RESTAURANT_DATA_URL =`https://api.allorigins.win/raw?url=${encodeURIComponent(actualResDataUrl)}`
-
-export const RESTAURANTS_MENU_URL = `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&${latLang}&restaurantId=`;
+const actualResMenuUrl=`https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&${latLang}&restaurantId=`
+export const RESTAURANTS_MENU_URL = `https://api.allorigins.win/raw?url=${encodeURIComponent(actualResMenuUrl)}`;
