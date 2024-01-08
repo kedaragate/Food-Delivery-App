@@ -299,3 +299,17 @@ body {
 .menu-type {
   color: var(--orange);
 }
+
+
+@media only screen and (max-width:480px){
+  .restaurant-container {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.restaurant-card {
+  width: 100%;
+  
+}
+}
