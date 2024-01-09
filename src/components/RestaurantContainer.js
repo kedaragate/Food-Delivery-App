@@ -66,6 +66,7 @@ const RestaurantContainer = () => {
         <input
           type="text"
           className="search-text"
+          placeholder="Search your favourite food"
           value={searchText}
           onChange={(e) => {
             return filterBasedOnSearch(e.target.value);

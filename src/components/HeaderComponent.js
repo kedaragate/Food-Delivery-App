@@ -5,6 +5,11 @@ const HeaderComponent = () => (
     <div className="logo-container">
       <h1 className="logo">fooDie</h1>
     </div>
+    <div className="hamburger-menu hidden">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
     <div className="menu-container">
       <ul>
         <li>
