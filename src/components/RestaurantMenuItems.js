@@ -5,13 +5,13 @@ const RestaurantMenuItems = ({ menuItems }) => {
   const { categories } = menuItems[2]?.card?.card;
   //console.log(categories);
   return (
-    <div className="menus-container">
+    <div className="menu-page-menus-container">
       <h2 className="menu-category-name">{menuItems[2]?.card?.card?.title}</h2>
       {(itemCards || categories)?.map((item) => {
         if (item.itemCards) {
           return item.itemCards.map((itemCard) => {
             return (
-              <div className="menu-container" key={itemCard?.card?.info?.id}>
+              <div className="menu-page-menu-container" key={itemCard?.card?.info?.id}>
                 <div className="menu-item">
                   <div className="menu-item-info">
                     <h4 className="menu-item-name">
