@@ -1,5 +1,5 @@
 const RestaurantOfferCard = ({ offer }) => {
-  const { header, logoBottom, couponCode } = offer;
+  const { header, couponCode } = offer;
 
   return (
     <div className="restaurant-offer-card">

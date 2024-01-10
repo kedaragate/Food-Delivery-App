@@ -16,7 +16,7 @@ const HeaderComponent = () => (
           <Link
             className="nav-menu-item"
             to="/"
-            style={{ textDecoration: "none" }}
+            style={{ textDecoration: "none", color: "rgb(90, 90, 90)" }}
           >
             Home
           </Link>
@@ -25,7 +25,7 @@ const HeaderComponent = () => (
           <Link
             className="nav-menu-item"
             to="/about"
-            style={{ textDecoration: "none" }}
+            style={{ textDecoration: "none", color: "rgb(90, 90, 90)" }}
           >
             About Us
           </Link>
