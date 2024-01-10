@@ -147,7 +147,7 @@ body {
 }
 
 .restaurant-img-container {
-  height: 14rem;
+  height: 50%;
   width: 100%;
   position: relative;
 }
@@ -343,7 +343,7 @@ body {
     display: none;
     right: 0;
     height: fit-content;
-    width: 60vw;
+    width: 95vw;
     height: 50vh;
     background-color: var(--white);
     z-index: 2;
@@ -364,22 +364,18 @@ body {
 
   .restaurant-container {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: space-between;
-    padding: 0;
   }
   .filter-div {
-    width: 100%;
+    width: 95vw;
 
     margin: 1rem;
-    top: 1rem;
+    top: 0;
     padding: 0.5rem;
     z-index: 1;
   }
   .search-text {
-    width: 100%;
+    width: 95vw;
     margin: 0 auto;
   }
   .filter-top-rated-btn {
@@ -387,9 +383,12 @@ body {
   }
 
   .restaurant-card {
-    max-width: 100%;
-    width: 500px;
-    height: fit-content;
+    width: 245px;
+
+    height: 400px;
     margin-bottom: 0.5rem;
+  }
+  .restaurant-img-container {
+    height: 40%;
   }
 }
