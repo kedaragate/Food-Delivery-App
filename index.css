@@ -335,7 +335,7 @@ body {
   .menu-container {
     position: absolute;
     background-color: var(--white);
-
+display:none;
     max-width: 95vw;
     width: 70%;
     height: 50vh;
