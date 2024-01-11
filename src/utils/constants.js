@@ -6,7 +6,7 @@ const latLang = "lat=19.0819577&lng=72.5514986"; //Mumbai
 /*const actualResDataUrl = `https://www.swiggy.com/dapi/restaurants/list/v5?${latLang}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`;*/
 
 const actualResDataUrl =
-  "https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.655142&lng=73.901186&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+  "https://www.swiggy.com/dapi/restaurants/list/v5?${Latlang}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
 
 /*export const RESTAURANT_DATA_URL = actualResDataUrl;*/
 export const RESTAURANT_DATA_URL = `https://api.allorigins.win/raw?url=${encodeURIComponent(
