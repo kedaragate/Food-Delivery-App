@@ -17,6 +17,7 @@ const RestaurantContainer = () => {
   const fetchRestaurants = async () => {
     const data = await fetch(RESTAURANT_DATA_URL);
     const result = await data.json();
+    console.log(result);
 
     const correctCardObjectOfRestaurants = function () {
       return result?.data?.cards.filter((res) => {
@@ -37,6 +38,7 @@ const RestaurantContainer = () => {
         }
       });
     };
+    console.log(correctCardObjectOfRestaurants()[0]);
     const finalResult =
       correctCardObjectOfRestaurants()[0]?.card?.card?.gridElements
         ?.infoWithStyle?.restaurants;

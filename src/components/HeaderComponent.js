@@ -4,7 +4,7 @@ const HeaderComponent = () => {
   return (
     <header className="nav-bar">
       <div className="logo-container">
-        <h1 className="logo">fooDie</h1>
+        <h1 className="logo">biteME</h1>
       </div>
       <div className="hamburger-menu">
         <div></div>
