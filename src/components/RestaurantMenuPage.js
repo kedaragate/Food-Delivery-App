@@ -6,6 +6,7 @@ const RestaurantMenu = () => {
   const { resId } = useParams();
 
   const resData = useRestaurantMenu(resId);
+  console.log(resData);
 
   if (resData.length === 0) {
     return <h1>Loading...</h1>;

@@ -45,7 +45,7 @@ const RestaurantMenuItems = ({ menuItems }) => {
         }
 
         return (
-          <div className="menu-item">
+          <div className="menu-item" key={item?.card?.info?.id}>
             <div className="menu-item-info">
               <h4 className="menu-item-name">
                 {item?.card?.info?.name || item?.card?.info?.title}

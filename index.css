@@ -46,9 +46,42 @@ body {
   left: 0;
   z-index: 2;
 }
+.logo-container {
+  height: 100%;
+  position: relative;
 
+  display: flex;
+  align-items: center;
+}
 .logo {
   color: var(--orange);
+}
+
+.user-status {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 23px;
+  animation: flash 1s ease-in-out infinite;
+}
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: rgb(1, 191, 1);
 }
 
 .hidden {

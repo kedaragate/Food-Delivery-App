@@ -1,16 +1,23 @@
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const HeaderComponent = () => {
+  console.log(useOnlineStatus());
   return (
     <header className="nav-bar">
       <div className="logo-container">
-        <h1 className="logo">biteME</h1>
+        <h1 className="logo">bIteME</h1>
+        <div
+          className={"user-status " + (useOnlineStatus() ? "green" : "red")}
+        ></div>
       </div>
+
       <div className="hamburger-menu">
         <div></div>
         <div></div>
         <div></div>
       </div>
+
       <div className="menu-container">
         <ul>
           <li>
