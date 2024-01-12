@@ -17,8 +17,8 @@ const RestaurantContainer = () => {
   const fetchRestaurants = async () => {
     const data = await fetch(RESTAURANT_DATA_URL);
     const result = await data.json();
-    console.log(result);
 
+    console.log(result);
     const correctCardObjectOfRestaurants = function () {
       return result?.data?.cards.filter((res) => {
         if (res.hasOwnProperty("card")) {
@@ -42,7 +42,7 @@ const RestaurantContainer = () => {
     const finalResult =
       correctCardObjectOfRestaurants()[0]?.card?.card?.gridElements
         ?.infoWithStyle?.restaurants;
-
+    console.log(finalResult);
     setListOfRes(finalResult);
     setFilteredListOfRes(finalResult);
   };
